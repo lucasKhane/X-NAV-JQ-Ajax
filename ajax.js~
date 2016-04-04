@@ -1,0 +1,7 @@
+$(document).ready(function() {
+    $.getJSON("text.json", function(){
+        console.log("Exito");
+    }).done(function(data) {
+        $("#local").click(function(){
+	    ("#texto").html(text)
+	});
