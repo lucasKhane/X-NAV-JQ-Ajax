@@ -7,5 +7,10 @@ $(document).ready(function() {
         $("#local").click(function(){
 	         $("#texto").html(text)
 	     });
+    })
+    .fail(function( text ) {
+        $("#local").click(function(){
+           $("#texto2").html("Ha habido un fallo")
+        });
     });
 });
